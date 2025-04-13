@@ -1,0 +1,2 @@
+# Animator-Parameter
+在Unity的專案環境下，使用指定的Attribute，能取得Animator內部的Parameter功能
