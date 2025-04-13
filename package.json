@@ -1,0 +1,17 @@
+{
+  "name": "com.cyi.animatorparameter",
+  "version": "1.0.0",
+  "displayName": "AnimatorParameter",
+  "description": "\u5728Unity\u7684\u5c08\u6848\u74b0\u5883\u4e0b\uff0c\u4f7f\u7528\u6307\u5b9a\u7684Attribute\uff0c\u80fd\u53d6\u5f97Animator\u5167\u90e8\u7684Parameter\u529f\u80fd",
+  "unity": "2021.3",
+  "author": {
+    "name": "CYi"
+  },
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "Shows how to use AnimatorParameterAttribute in a simple scene.",
+      "path": "Samples~/Demo"
+    }
+  ]
+}
