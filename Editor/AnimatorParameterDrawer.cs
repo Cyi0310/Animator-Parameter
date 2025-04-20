@@ -9,8 +9,6 @@ namespace GameTools.AnimatorParameter
     [CustomPropertyDrawer(typeof(AnimatorParameterAttribute))]
     public class AnimatorParameterDrawer : PropertyDrawer
     {
-        private const string EmptyMessage = "尚未偵測到有 Parameter";
-
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             var animatorAttr = (AnimatorParameterAttribute)attribute;
@@ -20,7 +18,8 @@ namespace GameTools.AnimatorParameter
 
             if (parameterNames.Length == 0)
             {
-                EditorGUI.LabelField(position, label.text, EmptyMessage);
+                var emptyMsg = LocalizationManager.Get("EmptyMsg");
+                EditorGUI.LabelField(position, label.text, emptyMsg);
                 return;
             }
             DrawDropdown(position, property, label, parameterNames);
