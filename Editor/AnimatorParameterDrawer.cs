@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
+using UnityEditor.Animations;
 using UnityEngine;
 
 namespace GameTools.AnimatorParameter
@@ -35,7 +36,12 @@ namespace GameTools.AnimatorParameter
         private string[] GetParameterNames(FieldInfo fieldInfo, UnityEngine.Object target)
         {
             var animator = fieldInfo?.GetValue(target) as Animator;
-            return (animator != null ? animator.runtimeAnimatorController : null) != null
+            if (animator?.runtimeAnimatorController is AnimatorController controller)
+            {
+                return controller.parameters.Select(p => p.name).ToArray();
+            }
+
+            return (animator != null && animator.runtimeAnimatorController != null)
                     ? animator.parameters.Select(p => p.name).ToArray()
                     : Array.Empty<string>();
         }
