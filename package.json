@@ -1,6 +1,6 @@
 {
   "name": "com.cyi.animatorparameter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "AnimatorParameter",
   "description": "Within the Unity project environment, using a specific Attribute allows you to access the parameters within the Animator, eliminating the need to manually input strings.",
   "unity": "2021.3",
