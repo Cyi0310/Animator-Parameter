@@ -60,7 +60,7 @@ namespace GameTools.AnimatorParameter
             }
 
             string packageRoot = packageInfo.resolvedPath;
-            jsonPath = Path.Combine(packageRoot, "Editor", "Localization", "Localization.json");
+            jsonPath = Path.Combine(packageRoot, "Scripts", "Editor", "Localization", "Localization.json");
             if (!File.Exists(jsonPath))
             {
                 Debug.LogWarning($"[{nameof(LocalizationManager)}] {Localization} file not found.");

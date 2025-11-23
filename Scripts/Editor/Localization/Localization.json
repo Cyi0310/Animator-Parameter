@@ -1,0 +1,39 @@
+{
+  "English": [
+    {
+      "key": "NoParametersMsg",
+      "value": "No Parameters defined"
+    },
+    {
+      "key": "TypeError",
+      "value": "Type Must be string. Current Type: {0}"
+    },
+    {
+      "key": "FieldNotFound",
+      "value": "Field '{0}' not found."
+    },
+    {
+      "key": "MissingValue",
+      "value": "<Missing: {0}>"
+    }
+  ],
+  "ChineseTraditional": [
+    {
+      "key": "NoParametersMsg",
+      "value": "當前尚未有任何參數(Parameter)"
+    },
+    {
+      "key": "TypeError",
+      "value": "型別錯誤! 必須是字串。目前是: {0}"
+    },
+    {
+      "key": "FieldNotFound",
+      "value": "欄位「{0}」未找到。"
+    },
+    {
+      "key": "MissingValue",
+      "value": "<遺失值: {0}>"
+    }
+  ]
+}
+
